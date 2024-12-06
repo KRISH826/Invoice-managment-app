@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -9,6 +9,7 @@ import {
 import { PlusIcon } from "lucide-react";
 import React from "react";
 import InvoiceList from "./InvoiceList";
+import Link from "next/link";
 
 function InvoicesPage() {
   return (
@@ -20,11 +21,16 @@ function InvoicesPage() {
             <CardDescription>Manage Your Invoices Here</CardDescription>
           </div>
           <div>
-            <Button><PlusIcon /> Create Invoice</Button>
+            <Link
+              className={buttonVariants({ className: "w-full" })}
+              href="/dashboard/invoices/create"
+            >
+              <PlusIcon /> Create Invoice
+            </Link>
           </div>
         </CardHeader>
         <CardContent>
-            <InvoiceList />
+          <InvoiceList />
         </CardContent>
       </Card>
     </div>

@@ -27,14 +27,6 @@ const InvoiceList = () => {
                         <ActionList />
                     </TableCell>
                 </TableRow>
-                <TableRow>
-                    <TableCell>2</TableCell>
-                    <TableCell>Peter Flake</TableCell>
-                    <TableCell>2000</TableCell>
-                    <TableCell>2023-02-02</TableCell>
-                    <TableCell>Paid</TableCell>
-                    <TableCell className='text-end'>View</TableCell>
-                </TableRow>
             </TableBody>
         </Table>
     </div>
