@@ -8,14 +8,6 @@ async function DashboardPage() {
   return (
     <>
       <div>DashboardPage</div>
-      <form
-        action={async () => {
-          "use server";
-          await signOut();
-        }}
-      >
-        <Button type="submit">Sign Out</Button>
-      </form>
     </>
   );
 }
