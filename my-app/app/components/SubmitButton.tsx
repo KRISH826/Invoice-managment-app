@@ -5,7 +5,11 @@ import { Loader2 } from "lucide-react";
 import React from "react";
 import { useFormStatus } from "react-dom";
 
-const SubmitButton = () => {
+type Props =  {
+  label: string;
+}
+
+const SubmitButton = ({label}: Props) => {
   const { pending } = useFormStatus();
   return (
     <>
@@ -16,7 +20,7 @@ const SubmitButton = () => {
           </Button>
         </>
       ) : (
-        <Button type="submit" className="w-full flex">Login</Button>
+        <Button type="submit" className="w-full flex">{label}</Button>
       )}
     </>
   );

@@ -29,8 +29,8 @@ function DashboardLinks() {
           key={link.id}
           href={link.href}
           className={cn(
-            pathname === link.href ? "text-blue-600 bg-blue-100" : "text-gray-700",
-            "flex px-2 py-2 rounded-md items-center gap-3 text-sm transition-all font-medium leading-6 hover:bg-blue-100 hover:text-blue-600"
+            pathname === link.href ? "text-white bg-primary" : "text-gray-700",
+            "flex px-2 py-2 rounded-md items-center gap-3 text-sm transition-all font-medium leading-6 hover:bg-primary hover:text-white"
           )}
         >
           <link.icon className="h-6 w-6" aria-hidden="true" />

@@ -64,7 +64,7 @@ async function LoginPage() {
             </div>
           </CardContent>
           <CardFooter className="flex flex-col items-start justify-start">
-            <SubmitButton />
+            <SubmitButton label="Login" />
             <CardDescription className="text-start mt-2">Don't have an account? <Link className="text-primary font-medium" href={"/signup"}>Sign up</Link></CardDescription>
           </CardFooter>
         </form>
